@@ -82,6 +82,7 @@ namespace Fileter
 			}
 			transferFile(rootDir, fileExtention, toDir);
 			MessageBox.Show("Done Filetering","Fileter Status");
+			progBar.Value = 0;
 		}
 	}
 }
