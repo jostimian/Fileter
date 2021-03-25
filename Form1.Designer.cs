@@ -31,6 +31,7 @@ namespace Fileter
 		{
 			this.Main = new System.Windows.Forms.TabControl();
 			this.FilterPage = new System.Windows.Forms.TabPage();
+			this.progBar = new System.Windows.Forms.ProgressBar();
 			this.chooseParentDir = new System.Windows.Forms.Button();
 			this.chooseLastDir = new System.Windows.Forms.Button();
 			this.submit = new System.Windows.Forms.Button();
@@ -57,11 +58,12 @@ namespace Fileter
 			this.Main.Location = new System.Drawing.Point(0, 0);
 			this.Main.Name = "Main";
 			this.Main.SelectedIndex = 0;
-			this.Main.Size = new System.Drawing.Size(404, 145);
+			this.Main.Size = new System.Drawing.Size(404, 171);
 			this.Main.TabIndex = 0;
 			// 
 			// FilterPage
 			// 
+			this.FilterPage.Controls.Add(this.progBar);
 			this.FilterPage.Controls.Add(this.chooseParentDir);
 			this.FilterPage.Controls.Add(this.chooseLastDir);
 			this.FilterPage.Controls.Add(this.submit);
@@ -74,9 +76,16 @@ namespace Fileter
 			this.FilterPage.Location = new System.Drawing.Point(4, 22);
 			this.FilterPage.Name = "FilterPage";
 			this.FilterPage.Padding = new System.Windows.Forms.Padding(3);
-			this.FilterPage.Size = new System.Drawing.Size(396, 119);
+			this.FilterPage.Size = new System.Drawing.Size(396, 145);
 			this.FilterPage.TabIndex = 1;
 			this.FilterPage.Text = "Home";
+			// 
+			// progBar
+			// 
+			this.progBar.Location = new System.Drawing.Point(11, 111);
+			this.progBar.Name = "progBar";
+			this.progBar.Size = new System.Drawing.Size(372, 23);
+			this.progBar.TabIndex = 1;
 			// 
 			// chooseParentDir
 			// 
@@ -164,10 +173,10 @@ namespace Fileter
 			this.About.Controls.Add(this.label5);
 			this.About.Controls.Add(this.label4);
 			this.About.Controls.Add(this.Title);
-			this.About.Location = new System.Drawing.Point(4, 21);
+			this.About.Location = new System.Drawing.Point(4, 22);
 			this.About.Name = "About";
 			this.About.Padding = new System.Windows.Forms.Padding(3);
-			this.About.Size = new System.Drawing.Size(396, 120);
+			this.About.Size = new System.Drawing.Size(396, 145);
 			this.About.TabIndex = 2;
 			this.About.Text = "About";
 			this.About.UseVisualStyleBackColor = true;
@@ -207,10 +216,9 @@ namespace Fileter
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
-			this.ClientSize = new System.Drawing.Size(404, 145);
+			this.ClientSize = new System.Drawing.Size(404, 171);
 			this.Controls.Add(this.Main);
 			this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.MaximumSize = new System.Drawing.Size(420, 184);
 			this.MinimumSize = new System.Drawing.Size(420, 184);
 			this.Name = "Form1";
 			this.Text = "Fileter";
@@ -241,6 +249,7 @@ namespace Fileter
 		private System.Windows.Forms.Label Title;
 		private System.Windows.Forms.Button chooseParentDir;
 		private System.Windows.Forms.Button chooseLastDir;
+		private System.Windows.Forms.ProgressBar progBar;
 	}
 }
 

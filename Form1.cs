@@ -6,8 +6,11 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.IO;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Serilog;
+
 
 namespace Fileter
 {
@@ -23,6 +26,7 @@ namespace Fileter
 		private void Form1_Load(object sender, EventArgs e)
 		{
 			Console.Beep(100,100);
+			progBar.Value = 0;
 		}
 
 		private void chooseLastDir_Click(object sender, EventArgs e)
@@ -54,11 +58,14 @@ namespace Fileter
 		private void transferFile(string folderPath, string fileExt, string toDir)
 		{
 			string[] files = Directory.GetFiles(rootDir,fileExt ,SearchOption.AllDirectories);
-			MessageBox.Show(string.Join("",files));
+			int filesLen = files.Length;
+			int numOfTransferedFile = 0;
 			foreach (string file in files)
 			{
+				numOfTransferedFile++;
 				string fileName = Path.GetFileName(file);
 				File.Move(file, toDir + "\\" + fileName);
+				progBar.Value = numOfTransferedFile / filesLen * 100;
 			}
 		}
 
@@ -67,8 +74,16 @@ namespace Fileter
 			fileExtention = "*" + fileExtentionBar.Text + "*";
 			rootDir = parentDir.Text;
 			toDir = toFolderDir.Text;
+			if (string.IsNullOrWhiteSpace(rootDir))
+			{
+				MessageBox.Show("Please add or specify the origin folder");
+			}
+			if (string.IsNullOrWhiteSpace(toDir))
+			{
+				MessageBox.Show("Please add or specify the folder where we will transfer the files");
+			}
 			transferFile(rootDir, fileExtention, toDir);
-			MessageBox.Show("Done Filetering");
+			MessageBox.Show("Done Filetering","Fileter Status");
 		}
 	}
 }
