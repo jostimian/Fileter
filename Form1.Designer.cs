@@ -29,6 +29,7 @@ namespace Fileter
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			this.Main = new System.Windows.Forms.TabControl();
 			this.FilterPage = new System.Windows.Forms.TabPage();
 			this.progBar = new System.Windows.Forms.ProgressBar();
@@ -219,6 +220,7 @@ namespace Fileter
 			this.ClientSize = new System.Drawing.Size(404, 166);
 			this.Controls.Add(this.Main);
 			this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximumSize = new System.Drawing.Size(420, 205);
 			this.MinimumSize = new System.Drawing.Size(420, 205);
 			this.Name = "Form1";

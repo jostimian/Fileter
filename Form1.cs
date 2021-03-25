@@ -74,11 +74,11 @@ namespace Fileter
 			toDir = toFolderDir.Text;
 			if (string.IsNullOrWhiteSpace(rootDir))
 			{
-				MessageBox.Show("Please add or specify the origin folder");
+				MessageBox.Show("Please add or specify the origin folder","Fileter");
 			}
 			if (string.IsNullOrWhiteSpace(toDir))
 			{
-				MessageBox.Show("Please add or specify the folder where we will transfer the files");
+				MessageBox.Show("Please add or specify the folder where we will transfer the files", "Fileter Status");
 			}
 			transferFile(rootDir, fileExtention, toDir);
 			MessageBox.Show("Done Filetering","Fileter Status");
