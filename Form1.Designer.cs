@@ -185,11 +185,11 @@ namespace Fileter
 			// 
 			this.label5.AutoSize = true;
 			this.label5.Font = new System.Drawing.Font("W95FA", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.Location = new System.Drawing.Point(6, 92);
+			this.label5.Location = new System.Drawing.Point(8, 122);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(35, 18);
+			this.label5.Size = new System.Drawing.Size(32, 18);
 			this.label5.TabIndex = 2;
-			this.label5.Text = "V1.0";
+			this.label5.Text = "V1.1";
 			// 
 			// label4
 			// 
