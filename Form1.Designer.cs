@@ -58,7 +58,7 @@ namespace Fileter
 			this.Main.Location = new System.Drawing.Point(0, 0);
 			this.Main.Name = "Main";
 			this.Main.SelectedIndex = 0;
-			this.Main.Size = new System.Drawing.Size(404, 171);
+			this.Main.Size = new System.Drawing.Size(404, 166);
 			this.Main.TabIndex = 0;
 			// 
 			// FilterPage
@@ -76,7 +76,7 @@ namespace Fileter
 			this.FilterPage.Location = new System.Drawing.Point(4, 22);
 			this.FilterPage.Name = "FilterPage";
 			this.FilterPage.Padding = new System.Windows.Forms.Padding(3);
-			this.FilterPage.Size = new System.Drawing.Size(396, 145);
+			this.FilterPage.Size = new System.Drawing.Size(396, 140);
 			this.FilterPage.TabIndex = 1;
 			this.FilterPage.Text = "Home";
 			// 
@@ -176,7 +176,7 @@ namespace Fileter
 			this.About.Location = new System.Drawing.Point(4, 22);
 			this.About.Name = "About";
 			this.About.Padding = new System.Windows.Forms.Padding(3);
-			this.About.Size = new System.Drawing.Size(396, 145);
+			this.About.Size = new System.Drawing.Size(396, 140);
 			this.About.TabIndex = 2;
 			this.About.Text = "About";
 			this.About.UseVisualStyleBackColor = true;
@@ -185,7 +185,7 @@ namespace Fileter
 			// 
 			this.label5.AutoSize = true;
 			this.label5.Font = new System.Drawing.Font("W95FA", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.Location = new System.Drawing.Point(8, 122);
+			this.label5.Location = new System.Drawing.Point(8, 117);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(32, 18);
 			this.label5.TabIndex = 2;
@@ -216,10 +216,11 @@ namespace Fileter
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
-			this.ClientSize = new System.Drawing.Size(404, 171);
+			this.ClientSize = new System.Drawing.Size(404, 166);
 			this.Controls.Add(this.Main);
 			this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.MinimumSize = new System.Drawing.Size(420, 184);
+			this.MaximumSize = new System.Drawing.Size(420, 205);
+			this.MinimumSize = new System.Drawing.Size(420, 205);
 			this.Name = "Form1";
 			this.Text = "Fileter";
 			this.Load += new System.EventHandler(this.Form1_Load);
