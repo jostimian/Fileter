@@ -1,0 +1,10 @@
+C:\Users\josti\source\repos\Fileter\bin\Release\Fileter.exe.config
+C:\Users\josti\source\repos\Fileter\bin\Release\Fileter.exe
+C:\Users\josti\source\repos\Fileter\bin\Release\Fileter.pdb
+C:\Users\josti\source\repos\Fileter\obj\Release\Fileter.csprojAssemblyReference.cache
+C:\Users\josti\source\repos\Fileter\obj\Release\Fileter.Form1.resources
+C:\Users\josti\source\repos\Fileter\obj\Release\Fileter.Properties.Resources.resources
+C:\Users\josti\source\repos\Fileter\obj\Release\Fileter.csproj.GenerateResource.cache
+C:\Users\josti\source\repos\Fileter\obj\Release\Fileter.csproj.CoreCompileInputs.cache
+C:\Users\josti\source\repos\Fileter\obj\Release\Fileter.exe
+C:\Users\josti\source\repos\Fileter\obj\Release\Fileter.pdb
